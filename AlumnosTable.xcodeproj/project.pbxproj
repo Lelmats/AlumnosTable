@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D330DEB28E341D00027B3F5 /* DetallesAlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D330DEA28E341D00027B3F5 /* DetallesAlumnoController.swift */; };
+		3D330DEE28E350180027B3F5 /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D330DED28E350180027B3F5 /* Materia.swift */; };
+		3D330DF028E3581E0027B3F5 /* CeldaMateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D330DEF28E3581E0027B3F5 /* CeldaMateriaController.swift */; };
 		3D36CF8D28DCB14500BF4A5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CF8C28DCB14500BF4A5E /* AppDelegate.swift */; };
 		3D36CF8F28DCB14500BF4A5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CF8E28DCB14500BF4A5E /* SceneDelegate.swift */; };
 		3D36CF9128DCB14600BF4A5E /* AlumnosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CF9028DCB14600BF4A5E /* AlumnosController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D330DEA28E341D00027B3F5 /* DetallesAlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesAlumnoController.swift; sourceTree = "<group>"; };
+		3D330DED28E350180027B3F5 /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
+		3D330DEF28E3581E0027B3F5 /* CeldaMateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMateriaController.swift; sourceTree = "<group>"; };
 		3D36CF8928DCB14500BF4A5E /* AlumnosTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlumnosTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D36CF8C28DCB14500BF4A5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D36CF8E28DCB14500BF4A5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,10 +86,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D330DEC28E341E30027B3F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D36CFC028DCB28700BF4A5E /* Alumno.swift */,
+				3D330DED28E350180027B3F5 /* Materia.swift */,
+			);
+			name = Models;
+			path = AlumnosTable;
+			sourceTree = "<group>";
+		};
 		3D36CF8028DCB14500BF4A5E = {
 			isa = PBXGroup;
 			children = (
 				3D36CF8B28DCB14500BF4A5E /* AlumnosTable */,
+				3D330DEC28E341E30027B3F5 /* Models */,
 				3D36CFA228DCB14D00BF4A5E /* AlumnosTableTests */,
 				3D36CFAD28DCB14D00BF4A5E /* AlumnosTableUITests */,
 				3D36CF8A28DCB14500BF4A5E /* Products */,
@@ -103,7 +120,7 @@
 		3D36CF8B28DCB14500BF4A5E /* AlumnosTable */ = {
 			isa = PBXGroup;
 			children = (
-				3D36CFBF28DCB1E600BF4A5E /* app */,
+				3D36CFBF28DCB1E600BF4A5E /* App */,
 				3D36CFBE28DCB1D700BF4A5E /* Assets */,
 				3D36CFBD28DCB1B800BF4A5E /* Storyboards */,
 				3D36CFBC28DCB1A700BF4A5E /* Controllers */,
@@ -133,8 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				3D36CF9028DCB14600BF4A5E /* AlumnosController.swift */,
-				3D36CFC028DCB28700BF4A5E /* Alumno.swift */,
 				3D36CFC228DCB60D00BF4A5E /* CeldaAlumnoController.swift */,
+				3D330DEA28E341D00027B3F5 /* DetallesAlumnoController.swift */,
+				3D330DEF28E3581E0027B3F5 /* CeldaMateriaController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -156,14 +174,14 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
-		3D36CFBF28DCB1E600BF4A5E /* app */ = {
+		3D36CFBF28DCB1E600BF4A5E /* App */ = {
 			isa = PBXGroup;
 			children = (
 				3D36CF8C28DCB14500BF4A5E /* AppDelegate.swift */,
 				3D36CF8E28DCB14500BF4A5E /* SceneDelegate.swift */,
 				3D36CF9A28DCB14D00BF4A5E /* Info.plist */,
 			);
-			name = app;
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,10 +316,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D36CF9128DCB14600BF4A5E /* AlumnosController.swift in Sources */,
+				3D330DEB28E341D00027B3F5 /* DetallesAlumnoController.swift in Sources */,
 				3D36CF8D28DCB14500BF4A5E /* AppDelegate.swift in Sources */,
 				3D36CF8F28DCB14500BF4A5E /* SceneDelegate.swift in Sources */,
+				3D330DEE28E350180027B3F5 /* Materia.swift in Sources */,
 				3D36CFC128DCB28700BF4A5E /* Alumno.swift in Sources */,
 				3D36CFC328DCB60D00BF4A5E /* CeldaAlumnoController.swift in Sources */,
+				3D330DF028E3581E0027B3F5 /* CeldaMateriaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

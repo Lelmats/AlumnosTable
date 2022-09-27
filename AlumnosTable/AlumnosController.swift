@@ -10,11 +10,14 @@ import UIKit
 
 class AlumnosController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tvAlumnos: UITableView!
+    
     var Alumnos : [Alumno] = []
+    var materias1 : [Materia] = []
     
     //Altura de celda
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 90
     }
     //Nùmero de secciones que tiene mi table view
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -38,8 +41,16 @@ class AlumnosController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        materias1.append(Materia(nombre: "Historia", codigo: "19923332"))
         // Do any additional setup after loading the view.
-        Alumnos.append(Alumno(nombre: "Max Rivera", matricula: "199177", carrera: "Multimedia", edad: "21"))
+        Alumnos.append(Alumno(nombre: "Max Rivera", matricula: "199177", carrera: "Multimedia", edad: "21", materias: materias1))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        let destino = segue.destination as! DetallesAlumnoController
+        destino.alumno = Alumnos [tvAlumnos.indexPathForSelectedRow!.row]
+
     }
 }
 

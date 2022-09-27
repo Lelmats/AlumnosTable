@@ -11,11 +11,13 @@ class Alumno {
     var matricula : String
     var carrera : String
     var edad : String
-
-    init(nombre : String, matricula : String, carrera : String, edad : String) {
+    var materias : [Materia]
+    
+    init(nombre : String, matricula : String, carrera : String, edad : String, materias : [Materia]) {
         self.nombre = nombre
         self.matricula = matricula
         self.carrera = carrera
         self.edad = edad
+        self.materias = materias
     }
 }
