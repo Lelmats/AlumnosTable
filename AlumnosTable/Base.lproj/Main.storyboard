@@ -38,7 +38,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaAlumno" rowHeight="90" id="slW-LG-1A1" customClass="CeldaAlumnoController" customModule="AlumnosTable" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="slW-LG-1A1" id="OiB-tA-CeU" customClass="CeldaAlumnoController">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="slW-LG-1A1" id="OiB-tA-CeU" customClass="CeldaAlumnoController" customModule="AlumnosTable" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -193,8 +193,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="mKs-Do-XWZ" id="wrJ-Ly-Taq"/>
-                                    <outlet property="delegate" destination="mKs-Do-XWZ" id="2ob-cd-Ue1"/>
+                                    <outlet property="dataSource" destination="mKs-Do-XWZ" id="gB7-jS-5wU"/>
+                                    <outlet property="delegate" destination="mKs-Do-XWZ" id="LCT-5f-qiN"/>
                                 </connections>
                             </tableView>
                         </subviews>
